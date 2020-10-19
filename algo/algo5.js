@@ -12,21 +12,10 @@ qui te permet de tester si ta fonction est bonne. Le résultat doit être 12
 de points de notre équipe à la fin du championnat
 */
 
-const scores = [
-  "1:0",
-  "2:0",
-  "3:0",
-  "4:4",
-  "2:2",
-  "3:3",
-  "1:4",
-  "2:3",
-  "2:4",
-  "3:4"
-];
+const scores = ["1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:4"];
 
 function getPoints(array) {
   // Your code here !
 }
 
-console.log(getPoints(scores));
+module.exports = getPoints;
