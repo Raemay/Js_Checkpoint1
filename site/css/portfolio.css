@@ -80,3 +80,22 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+nav .menu{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main .banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img{
+  height: 10em;
+  width: 10em;
+}
