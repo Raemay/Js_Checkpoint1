@@ -11,16 +11,9 @@ Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nomb
 
 function isLeapYear(year) {
   // TODO: Your code here
-  let year4 = year%4
-  let year100 = year%100
-  let year400 = year%400
-  
-  if(year4 === 0  && year100 === !0) {
-        return true
-} else if (year400 === 0) { 
-        return true
-} else {
-      return false
-    }
-  };
+  if ((year%4==0) && ((year%100!=0) || (year%400==0))) {
+    return true;   
+  }  else {
+    return false
+};}
 module.exports = isLeapYear;
