@@ -81,6 +81,13 @@ p {
   padding-right: 15px;
 }
 
+.disabled{
+  opacity: 0.4;
+}
+
+@media (min-width: 700px) {
+
+
 nav .menu{
   display: flex;
   width: 100%;
@@ -98,4 +105,32 @@ main .banner{
 .banner img{
   height: 10em;
   width: 10em;
+}
+.skills{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.projects{
+  text-align: center;
+}
+.contents{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+}
+
+@media (max-width: 700px) {
+  .desktop{
+    display: none;
+  }
+
+  .skills{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
