@@ -35,3 +35,14 @@ liButton.addEventListener("click", () => {
     secondLi.innerHTML = "Git";
     thirdLi.innerHTML = "Terminal";
 })
+
+const backendText = document.getElementById("backendText")
+const backendButton = document.getElementById("backendButton")
+const backendParent = document.getElementById("backendParent")
+
+backendButton.addEventListener("click", ()=>{
+    const newLi = document.createElement("li")
+    newLi.textContent = backendText.value
+    backendParent.appendChild(newLi)
+    backendText.value = ""
+})
