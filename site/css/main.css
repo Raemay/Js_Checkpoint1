@@ -16,6 +16,7 @@ a {
 .navbar {
   display: flex;
   margin: 15px 30px;
+
 }
 
 .logo {
@@ -32,4 +33,50 @@ a {
 
 button:focus {
   outline: none;
+}
+
+.disabled {
+  opacity: 0.30;
+}
+
+/*Ecran Ordi*/
+@media screen and (min-width: 700px) {
+
+.navbar {
+  justify-content: space-between;
+}
+#hello {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+
+
+/*Ecran Portable*/
+@media screen and (max-width: 700px) {
+
+#image-desktop {
+  display: none;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  display: flex;
+flex-direction: column-reverse;
+}
+
+
 }
