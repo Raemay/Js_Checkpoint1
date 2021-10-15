@@ -84,6 +84,12 @@ p {
 .disabled{
   opacity: 0.4;
 }
+.is-visible{
+  display: flex;
+}
+.no-visible{
+  display: none;
+}
 
 @media (min-width: 700px) {
 

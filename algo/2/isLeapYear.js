@@ -11,11 +11,7 @@ Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nomb
 
 function isLeapYear(year) {
   // TODO: Your code here
-let a = year%400;
-let b = year%100;
-
-
-  if (a === 0 && b !== 0){
+  if (((year%4 === 0) && (year%100 !==0)) || (year%400===0)){
     return true;
   }else{
     return false
