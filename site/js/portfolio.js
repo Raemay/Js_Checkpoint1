@@ -17,7 +17,7 @@ btnname.addEventListener('click', function(){
     name.style.color = "white";
     description.style.backgroundColor = newcolor;
     for(i = 0; i < pink.length; i++){
-        pink[i].classList.toggle("purple-text")
+        pink[i].style.color =newcolor
     }
     
 })
