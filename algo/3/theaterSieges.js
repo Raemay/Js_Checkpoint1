@@ -20,11 +20,10 @@ exemple :
 function theaterSieges() {
 let rowArray = [];
 let theaterArray = []
-let column = 0;
+
 for (let j = 1; j <= 26; j++){
-  column += 1;
   for (let i = 1; i <= 100; i++){
-  rowArray.push(column+'-'+ i)
+  rowArray.push(j+'-'+ i)
 }
 theaterArray.push(rowArray);
 rowArray = [];
