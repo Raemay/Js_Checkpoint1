@@ -19,8 +19,20 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
-}
+  let arrayRow = [];
+  let theaterMatrice = [];
+  let column = [0];
 
+  for(let j = 1; j<=26; j++) {
+    for( let i = 1; i <= 100; i++){
+      arrayRow.push(j+'-'+i)
+    }
+    theaterMatrice.push(arrayRow);
+    arrayRow = [];
+  }
+  return theaterMatrice;
+
+}
 console.log(theaterSieges());
 
 module.exports = theaterSieges;
