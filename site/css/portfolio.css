@@ -2,8 +2,17 @@
   background-color: pink;
 }
 
+.new-bg{
+  background-color: #750ff7;
+}
+
+
 .pink-text {
   color: pink;
+}
+
+.new-color {
+  color:#750ff7;
 }
 
 .purple-text {
@@ -22,15 +31,36 @@
   width: 60%;
   text-align: center;
 }
+.firstBanner {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 50%;
+  align-content: center;
+  align-items: center;
+}
 
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .skills{
+    flex-direction: column-reverse;
+  }
+}
 .desktop {
   margin: 80px 0 -5px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .skills {
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .column {
@@ -42,16 +72,19 @@
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+  width: 40vw;
 }
 
 .column:first-child {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
+  border-radius: 12px;
 }
 
 .column:last-child {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-radius: 12px;
 }
 
 .column ul {
