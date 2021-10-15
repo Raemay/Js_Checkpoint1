@@ -1,18 +1,27 @@
+h1 {
+  font-size: 30px;
+  padding: 0;
+}
+
 .pink-bg {
   background-color: pink;
 }
 
-.new-bg{
+.new-bg {
   background-color: #750ff7;
+  
 }
-
 
 .pink-text {
   color: pink;
 }
 
+.disabled {
+  color: #d5b7fc;
+}
+
 .new-color {
-  color:#750ff7;
+  color: #750ff7;
 }
 
 .purple-text {
@@ -44,7 +53,7 @@
   .desktop {
     display: none;
   }
-  .skills{
+  .skills {
     flex-direction: column-reverse;
   }
 }
@@ -108,8 +117,43 @@ img {
 .projects a {
   color: #750ff7;
 }
+.projects .disabled {
+  color: #d5b7fc;
+}
+
+.heading {
+  text-align: center;
+}
+.contents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 25vw;
+}
 
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+button {
+  background-color: #750ff7;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#modifButton {
+  background-color: rgba(233, 240, 243, 0);
+  border-color: white;
+  border: 2.5px solid;
+}
+
+#newInput{
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 3px;
 }
