@@ -1,6 +1,10 @@
 .pink-bg {
   background-color: pink;
 }
+.new-background{
+  background-color: #750ff7;;
+}
+
 
 .pink-text {
   color: pink;
@@ -83,6 +87,10 @@ p {
 
 .outOfDate {
   opacity: 40%;
+}
+
+.white {
+  color: white;
 }
 
 /*responsive*/

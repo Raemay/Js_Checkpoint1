@@ -25,7 +25,7 @@
       <section class="introduction">
         <h1>Random dev</h1>
         <h2>i like to think i'm a cool dude</h2>
-        <img src="image/avatar-bis.png" alt="randomdev">
+        <img id="avatar" src="image/avatar-bis.png" alt="randomdev">
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
@@ -33,8 +33,9 @@
 
       <!-- Second banner with description of your name and your presentation -->
       <section class="presentation">
-        <div class="description pink-bg">
+        <div class="description pink-bg" id="description">
           <h2>Hi, I’m <span id="name">Matt</span>. Nice to meet you.</h2>
+          <button id="button">Click me to change the name</button>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
         </div>
 
@@ -45,9 +46,9 @@
               <img src="image/frontend.svg" alt="frontend" />
               <h2>Front-end Developer</h2>
               <p>I love bringing ideas to life.</p>
-              <h2 class="pink-text">Languages I speak:</h2>
+              <h2 id="pink" class="pink-text">Languages I speak:</h2>
               <p>HTML, CSS</p>
-              <h2 class="pink-text">Dev Tools:</h2>
+              <h2 id="pink" class="pink-text">Dev Tools:</h2>
               <ul id="front-dev-tools">
                 <li>You can modify</li>
                 <li>You can modify</li>
@@ -60,9 +61,9 @@
               <img src="image/frontend.svg" alt="frontend" />
               <h2>Back-end Developer</h2>
               <p>I like to code things from scratch.</p>
-              <h2 class="pink-text">Languages I speak:</h2>
+              <h2 id="pink" class="pink-text">Languages I speak:</h2>
               <p>MySql</p>
-              <h2 class="pink-text">Dev Tools:</h2>
+              <h2 id="pink" class="pink-text">Dev Tools:</h2>
               <ul>
                 <li>VScode</li>
               </ul>
@@ -102,7 +103,7 @@
       </section>      
     </main>
     <footer class="presentation">
-      <div class="description pink-bg">
+      <div class="description pink-bg" id="footer">
         <img src="image/logo-white.svg" alt='logo-white' />
         <h2>Living, learning, & leveling up one day at a time.</h2>
       </div>
