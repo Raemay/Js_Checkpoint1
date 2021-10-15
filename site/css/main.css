@@ -39,6 +39,12 @@ button:focus {
   opacity: 0.30;
 }
 
+.class-button {
+  background-color: #750ff7;
+  color: white;
+  border: 0;
+}
+
 /*Ecran Ordi*/
 @media screen and (min-width: 700px) {
 

@@ -19,6 +19,15 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
+
+  let tableau = [];
+  for (let i = 1; i <= 26; i++) {
+        for (let j = 1; j <= 100; j++) {
+          tableau.push(i+ '-' + j)
+    }}
+
+  console.log(tableau)
+
 }
 
 console.log(theaterSieges());
