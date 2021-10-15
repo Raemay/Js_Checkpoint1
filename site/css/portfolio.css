@@ -10,6 +10,7 @@
   color: #750ff7;
 }
 
+
 .description {
   color: #ffffff;
   display: flex;
@@ -80,3 +81,38 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: right;
+  }
+
+  .blockintro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .skills{
+    display: fleX;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .imgDesktop {
+      display: none;
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+  }
