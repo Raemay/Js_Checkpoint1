@@ -17,8 +17,14 @@ exemple :
 ] 
 */
 
-function theaterSieges() {
+function theaterSieges(a, b) {
   // Your code here !
+  let arr = [];
+for (let i=O; i<a; i++){
+    for (let y=0; y<b; y++){
+        arr.push([i-b]);
+    }
+}
 }
 
 console.log(theaterSieges());
