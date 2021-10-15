@@ -18,7 +18,19 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+
+  let place = [];
+  let allPlace = [];
+
+  for( let i = 1; i <= 26; i++) {
+    for( let j = 1; j <= 100; j++) {
+      place.push(i+'-'+j)
+    }
+    allPlace.push(place)
+    place= []
+  }
+  
+  return allPlace
 }
 
 console.log(theaterSieges());
