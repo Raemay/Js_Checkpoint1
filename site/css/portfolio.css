@@ -22,6 +22,9 @@ align-items: center;
 .avatar {
   padding: 20px;
 }
+.avatar2 {
+  display: none;
+}
 
 .description {
   color: #ffffff;
