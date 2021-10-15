@@ -17,8 +17,15 @@ exemple :
 ] 
 */
 
-function theaterSieges() {
+function theaterSieges(sieges) {
   // Your code here !
+
+
+  for (let i = 0; i < sieges.length; i++) {
+    numberOfSieges = ("sieges[i]" + "-" + "sieges[i]++");
+    return numberOfSieges;
+  };
+
 }
 
 console.log(theaterSieges());
