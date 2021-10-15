@@ -27,6 +27,7 @@ const persons = [
 
 function findAdults(arr) {
   // Your code here !
+  arr.push(persons.filter( person => person.age > 17))
 }
 
 module.exports = findAdults;
