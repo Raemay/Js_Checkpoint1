@@ -14,7 +14,18 @@ image2.addEventListener('click', () => {
 const nouveauNom = document.querySelector("click-event");
 let oldName = document.querySelector('#name');
 
-oldName.addEventListener('click', () => {
+document.querySelector('.changeName').addEventListener('click', () => {
 oldName.innerHTML = prompt("Enter your name")
-document.getElementById("nouveauNom").style.backgroundColor="white";
+oldName.style.color ="white";
+const promptColor = prompt('enter your color')
+document.querySelector('.pink-bg').style.backgroundColor = `${promptColor}`
+for (let i=0; i< document.querySelectorAll('.pink-text').length; i++) {
+    document.querySelectorAll('.pink-text')[i].style.color = `${promptColor}`
+}
+for (let i=0; i< document.querySelectorAll('.pink-bg').length; i++) {
+    document.querySelectorAll('.pink-bg')[i].style.backgroundColor = `${promptColor}`
+}
+for (let i=0; i< document.querySelectorAll('.newNavbar').length; i++) {
+    document.querySelectorAll('.newNavbar')[i].style.color = `${promptColor}`
+}
 })
