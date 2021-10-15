@@ -1,3 +1,6 @@
+  
+
+
 .pink-bg {
   background-color: pink;
 }
@@ -80,3 +83,9 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media only screen and (min-width: 700px) {
+.navbar {
+display: flex;
+justify-content: space-between;
+}}
