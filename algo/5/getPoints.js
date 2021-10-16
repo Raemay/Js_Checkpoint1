@@ -12,10 +12,35 @@ qui te permet de tester si ta fonction est bonne. Le résultat doit être 10
 de points de notre équipe à la fin du championnat
 */
 
-const scores = ['1:0', '2:0', '3:0', '4:4', '2:2', '3:3', '1:4', '2:3', '2:4', '3:3'];
+const scores = [
+  '1:0',
+  '2:0',
+  '3:0',
+  '4:4',
+  '2:2',
+  '3:3',
+  '1:4',
+  '2:3',
+  '2:4',
+  '3:3',
+];
 
 function getPoints(array) {
-  // Your code here !
+  let score = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    const listeScores = array[i].split(':');
+    console.log(listeScores);
+    if (parseInt(listeScores[0]) == parseInt(listeScores[1])) {
+      // égalité
+      score += 1;
+    } else if (parseInt(listeScores[0]) > parseInt(listeScores[1])) {
+      // victoire
+      score += 3;
+    }
+  }
+
+  return score;
 }
 
 module.exports = getPoints;

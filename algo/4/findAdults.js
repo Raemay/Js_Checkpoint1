@@ -1,3 +1,5 @@
+const sumArr = require('../6/sumArr');
+
 /*
 Voici un tableau de personnes.
 Tu dois écire le code de la fonction findAdult, qui renvoie un
@@ -26,7 +28,22 @@ const persons = [
 ];
 
 function findAdults(arr) {
-  // Your code here !
+  let arrFemale = [];
+  let arrMale = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].sex === 'female' && arr[i].age > 17) {
+      arrFemale.push(arr[i]);
+    } else if (arr[i].sex === 'male' && arr[i].age > 17) {
+      arrMale.push(arr[i]);
+    }
+  }
+
+  const result = [1, 1];
+  result[0] = arrFemale;
+  result[1] = arrMale;
+
+  return result;
 }
 
 module.exports = findAdults;

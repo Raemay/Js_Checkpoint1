@@ -17,6 +17,16 @@ Au final la liste devra ressembler à :
 
 function theaterSieges() {
   // Your code here !
+  const colonnes = 26;
+  const sieges = 100;
+  let listeSieges = new Array(colonnes);
+  for (let i = 0; i <= colonnes - 1; i++) {
+    listeSieges[i] = new Array(sieges);
+    for (let j = 0; j <= sieges - 1; j++) {
+      listeSieges[i][j] = `${i + 1}-${j + 1}`;
+    }
+  }
+  return listeSieges;
 }
 
 console.log(theaterSieges());

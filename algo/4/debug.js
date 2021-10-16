@@ -13,13 +13,4 @@ const persons = [
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
 
-test('both length should be 3', () => {
-  expect(findAdults(persons)[0].length).toBe(3);
-  expect(findAdults(persons)[1].length).toBe(3);
-});
-
-test('adult array should include Homer', () => {
-  expect(findAdults(persons)[1].some((e) => e.name === 'Homer Simpson')).toBe(
-    true
-  );
-});
+console.log(findAdults(persons)[0].length);
