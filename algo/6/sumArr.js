@@ -12,6 +12,17 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 
 function sumArr(arrayA, arrayB) {
   // Your code here !
+let result = [];
+
+for( let i = 0; i < arrayA.length; i ++){
+
+  if(isNaN(arrayA[i])) arrayA[i] = '0';
+  if(isNaN(arrayB[i])) arrayB[i] = '0';
+
+  result[i] = parseInt(arrayA[i]) + parseInt(arrayB[i]);
+  result[i] = result[i].toString();
+}
+return result;
 }
 
 module.exports = sumArr;
