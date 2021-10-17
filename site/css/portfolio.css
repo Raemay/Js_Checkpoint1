@@ -1,9 +1,13 @@
-
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
 
 .introduction {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .pink-bg {
@@ -38,7 +42,10 @@
 .skills {
   margin-top: -30px;
   border-radius: 12px;
-  padding: 0 10%;
+  padding: 0;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
 }
 
 .column {
@@ -68,7 +75,7 @@
 }
 
 .box {
-  width: 25%;
+  width: 17.5%;
   padding: 30px;
   border: 1px solid #e6ecf8;
   margin: 20px;
@@ -89,27 +96,40 @@ p {
   padding-right: 15px;
 }
 
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 700px) {
+  .contents {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .desktop {
     display: none;
   }
-}
-
-@media screen and (min-width: 700px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .introduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .skills {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column-reverse;
     justify-content: center;
   }
-};
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
