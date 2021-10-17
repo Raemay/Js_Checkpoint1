@@ -1,4 +1,4 @@
-  
+
 
 
 .pink-bg {
@@ -28,6 +28,12 @@
 
 .desktop {
   margin: 80px 0 -5px 0;
+}
+
+#changeButton {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
 }
 
 .skills {
@@ -71,9 +77,6 @@
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
 }
 
-img {
-  max-width: 100%;
-}
 
 .projects a {
   color: #750ff7;
