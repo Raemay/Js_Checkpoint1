@@ -84,8 +84,43 @@ p {
   padding-right: 15px;
 }
 
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+ .flex{
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 700px) {
+    .skills {
+    display: flex;
+    justify-content: center;
+}}
+
+@media only screen and (max-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }}
+
 @media only screen and (min-width: 700px) {
 .navbar {
 display: flex;
 justify-content: space-between;
 }}
+
+@media only screen and (max-width: 600px) {
+.desktop {
+  display: none;
+}
+}
