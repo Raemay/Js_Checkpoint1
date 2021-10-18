@@ -33,8 +33,7 @@ function modifyTextAndColor() {
 function modifyDevTools() {
     const devToolsList = ['VS Code', 'React', 'Jquery'];
         for (let i= 0; i < devToolsList.length; i++) {
-            document.querySelectorAll('#front-dev-tools').innerHTML = devToolsList[0];  
-            document.querySelectorAll('#front-dev-tools').innerHTML = devToolsList[1];
-            document.querySelectorAll('#front-dev-tools').innerHTML = devToolsList[2];
+            document.querySelectorAll('#front-dev-tools').innerHTML = devToolsList[i];  
         }
+        return devToolsList[i];
 }
