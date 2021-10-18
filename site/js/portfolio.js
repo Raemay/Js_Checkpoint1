@@ -32,8 +32,22 @@ function modifyTextAndColor() {
 /*MODIFIER LISTE DEV TOOLS */
 function modifyDevTools() {
     const devToolsList = ['VS Code', 'React', 'Jquery'];
-        for (let i= 0; i < devToolsList.length; i++) {
-            document.querySelectorAll('#front-dev-tools').innerHTML = devToolsList[i];  
-        }
-        return devToolsList[i];
+    devToolsList.forEach((devTool) => {
+        const newDevToolsList = document.createElement("li");
+        newDevToolsList.innerHTML = `${devTool}`;
+    )};
+    document.querySelectorAll('#front-dev-tools').innerHTML = newDevToolsList([]);
 }
+
+/*const animalList = document.querySelector(".animal-list");
+
+animals.forEach((animal) => {
+
+  const newAnimal = document.createElement("li");
+
+  newAnimal.innerText = `${animal.emoji} - ${animal.name}`;
+
+  animalList.appendChild(newAnimal);
+
+});
+*/
