@@ -110,6 +110,7 @@ p {
   color: white;
   background-color: rgb(100, 3, 179);
   padding: 5px;
+  margin: 10px;
 }
 @media screen and (min-width: 700px) {
   .contents {

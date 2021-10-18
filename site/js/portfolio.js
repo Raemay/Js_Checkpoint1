@@ -23,4 +23,18 @@ function modifyTextAndColor() {
         for (let i = 0; i < colorText.length; i++) {
             colorText[i].style.color = userColor;
         }
+    const colorLink = document.querySelectorAll("a");
+        for (let i = 0; i < colorLink.length; i++) {
+            colorLink[i].style.color = userColor;
+        }
+};
+
+/*MODIFIER LISTE DEV TOOLS */
+function modifyDevTools() {
+    const devToolsList = ['VS Code', 'React', 'Jquery'];
+        for (let i= 0; i < devToolsList.length; i++) {
+            document.querySelectorAll('#front-dev-tools').innerHTML = devToolsList[0];  
+            document.querySelectorAll('#front-dev-tools').innerHTML = devToolsList[1];
+            document.querySelectorAll('#front-dev-tools').innerHTML = devToolsList[2];
+        }
 }
