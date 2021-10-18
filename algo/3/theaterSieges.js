@@ -19,8 +19,14 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
-  const columnSieges = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
-  const rowSieges = []
+  const columnSieges = [];
+    for (let i = 0; i < 26; i++ ) {
+      columnSieges.push([])
+      for (let j = 0; j < 100; j++) {
+       columnSieges[i].push(`${i+1}-${j+1}`);
+      }
+    }
+  return columnSieges;
 }
 
 console.log(theaterSieges());
