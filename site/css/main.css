@@ -35,6 +35,12 @@ button:focus {
 }
 
 
+#button_modify{
+  border-top: white;
+  border-radius : 10%;
+  background-color: rgb(204, 114, 240);
+}
+
 
 @media (min-width: 700px){
   .navbar{
