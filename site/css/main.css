@@ -38,6 +38,14 @@ a {
 	color: #750ff7;
 }
 
+button {
+	color: white;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #f76c6c;
+	border: none;
+	cursor: pointer;
+}
 button:focus {
 	outline: none;
 }
