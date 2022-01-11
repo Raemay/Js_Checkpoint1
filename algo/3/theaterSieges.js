@@ -18,8 +18,12 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  let row = [ ];
+  for (let i = 1; i < 100; i ++){
+    row.push(`${i}-`);
+  }
 }
+
 
 console.log(theaterSieges());
 
