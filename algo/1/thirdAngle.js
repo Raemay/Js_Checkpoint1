@@ -7,7 +7,8 @@ thirdAngle(20, 80) doit renvoyer 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+  const sum = a+b
+  return 180-sum;
 }
 
 module.exports = thirdAngle;
