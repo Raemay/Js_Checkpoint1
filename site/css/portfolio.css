@@ -80,3 +80,53 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/* BIG SCREEN ONLY */
+@media screen and (min-width : 700px) {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+
+  .skills {
+    display : flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .projects .contents {
+    display: flex;
+  }
+}
+
+/* MOBILE ONLY */
+@media screen and (max-width : 700px) {
+  .desktop {
+    display : none;
+  }
+} 
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .disabled {
+   opacity: 0.5;
+ }
+
+ .projects .heading {
+    text-align: center;
+ }
+
+ .button {
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Dosis", sans-serif;
+  padding: 6px 18px;
+  border-color: white;
+  color: white;
+ }
