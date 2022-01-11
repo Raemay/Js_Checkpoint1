@@ -19,10 +19,12 @@ exemple :
 
 function theaterSieges() {
   let array = [];
-  for (let i=0; i < 26; i++)
-    array.push([i]);
-    for (let i=0; i < 100; i++)
-    array.push([i]);
+
+  for (let i=0; i <= 26; i++)
+    const colonne = [];
+    for (let j=1; j <= 100; j++){
+      
+    }
 }
 
 console.log(theaterSieges());
