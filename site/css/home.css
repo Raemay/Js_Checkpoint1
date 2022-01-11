@@ -6,7 +6,15 @@ main {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  align-items: center;
+  align-items: right;
+  text-align: right;
+}
+
+.menu a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: right;
+  text-align: right;
 }
 
 .logo {
