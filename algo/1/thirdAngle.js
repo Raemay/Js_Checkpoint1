@@ -12,3 +12,4 @@ function thirdAngle(a, b, c = 180) {
 }
 
 module.exports = thirdAngle
+n
