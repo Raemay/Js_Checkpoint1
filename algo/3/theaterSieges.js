@@ -18,7 +18,15 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  let matrix = [];
+  for (let j = 1; j < 27; j++){
+    let row = [];
+    for (let i = 1; i < 101; i++){ 
+      row.push(`${j}-${i}`);
+    }
+    matrix.push(row);
+  }
+  return matrix;
 }
 
 console.log(theaterSieges());
