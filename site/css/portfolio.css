@@ -80,3 +80,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.projects a.disabled{
+  color :rgba(234, 197, 255, 0.5)
+}
