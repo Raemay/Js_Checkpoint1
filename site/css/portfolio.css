@@ -80,3 +80,42 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.menu {
+  margin : 0 auto;
+  position: absolute;
+  right : 20px;
+}
+
+#banner {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width:700px) {
+  .introduction {
+    display : none;
+  }
+
+  .skills {
+    flex-direction: column-reverse;
+  }
+
+  .column:first-child {
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    
+  }
+  
+  .column:last-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-bottom: 50px;
+  }
+}
