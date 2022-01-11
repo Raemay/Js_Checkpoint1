@@ -18,9 +18,21 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  let matrice = [];
+  const rows = 26;
+  const seats = 100
+
+  for (let i1 = 1; i1 <= rows; i1++) {
+    let row =[];
+    for (let i2 = 1; i2 <= seats; i2++) {
+      row.push(`${i1}-${i2}`)
+    }
+    matrice.push(row)
+  }
+  return matrice;
 }
 
 console.log(theaterSieges());
+console.log("chien");
 
 module.exports = theaterSieges;
