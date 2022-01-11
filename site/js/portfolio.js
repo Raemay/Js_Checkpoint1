@@ -5,6 +5,7 @@ const nameGreet = document.getElementById('name')
 const button = document.querySelector('button')
 const description = document.querySelectorAll('.pink-bg')
 const text = document.querySelectorAll('.pink-text')
+const links = document.querySelectorAll('.menu')
 
 console.log(text)
 
@@ -24,7 +25,10 @@ button.addEventListener('click', () => {
 	}
 
 	for (let color of text) {
-		console.log(color)
 		color.style.color = changeColor
 	}
+
+	// for (let link of links) {
+	// 	link.style.color = changeColor
+	// }
 })
