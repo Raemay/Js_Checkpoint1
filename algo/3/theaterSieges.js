@@ -18,7 +18,15 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  const sallePrincipale = [];
+  for(let i = 1; i <= 26; i++) {
+    const colonne = [];
+    for(let j = 1; j <= 100; j++) {
+      colonne.push(i+'-'+j);
+    }
+    sallePrincipale.push(colonne);
+  }
+  return sallePrincipale;
 }
 
 console.log(theaterSieges());
