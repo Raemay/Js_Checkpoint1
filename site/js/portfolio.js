@@ -3,7 +3,10 @@ console.log('hello')
 const avatar = document.querySelector('.avatar')
 const nameGreet = document.getElementById('name')
 const button = document.querySelector('button')
-const description = document.querySelector('.pink-bg')
+const description = document.querySelectorAll('.pink-bg')
+const text = document.querySelectorAll('.pink-text')
+
+console.log(text)
 
 console.log(description)
 
@@ -16,5 +19,12 @@ button.addEventListener('click', () => {
 	const changeColor = prompt('Enter your color')
 	console.log(changeColor)
 	nameGreet.textContent = enterName
-	description.style.backgroundColor = changeColor
+	for (let desc of description) {
+		desc.style.backgroundColor = changeColor
+	}
+
+	for (let color of text) {
+		console.log(color)
+		color.style.color = changeColor
+	}
 })
