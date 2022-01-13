@@ -14,7 +14,7 @@ function sumArr(arrayA, arrayB) {
 	const newArr1 =arrayA.map(Number)
     const newArr2 = arrayB.map(Number)
 
-    const sum = newArr1.map((result,index) => {
+    const sum = newArr1.map((result,index)=>{
         return result + newArr2[index]
     })
         return sum
