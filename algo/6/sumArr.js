@@ -11,13 +11,15 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 */
 
 function sumArr(arrayA, arrayB) {
-	const newArr1 =arrayA.map(Number)
-    const newArr2 = arrayB.map(Number)
+	const newArr1 = arrayA.map(Number)
+	const newArr2 = arrayB.map(Number)
 
-    const sum = newArr1.map((result,index)=>{
-        return result + newArr2[index]
-    })
-        return sum
-     } 
-
+	const sum = newArr1.map((result, index) => {
+		if (!newArr2[index]) {
+			return (newArr2[index] = String(result))
+		}
+		return String(result + newArr2[index])
+	})
+	return sum
+}
 module.exports = sumArr;
