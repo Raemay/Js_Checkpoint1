@@ -30,9 +30,7 @@ a {
   color: #750ff7;
 }
 
-button:focus {
-  outline: none;
-}
+
 .desktop{
   display: none;
 }
@@ -42,10 +40,11 @@ button:focus {
 }
 
 .button{
-  width: 100px;
-  height: 30px;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
   background-color: rgb(241, 150, 150);
-  text-color: white;
+  color: white;
 }
 
 .disabled{
