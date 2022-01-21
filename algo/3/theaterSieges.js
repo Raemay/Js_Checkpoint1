@@ -19,6 +19,12 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
+ for (let i = 0; i<theaterSieges.length; i++){
+   for(let j=0; j<theaterSieges[j].length; j++){
+    return theaterSieges[i][j]
+   }
+   
+ }
 }
 
 console.log(theaterSieges());
