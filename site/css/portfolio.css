@@ -105,6 +105,43 @@ p {
   align-items: center;
 }
 
+.presentation__btn {
+  height: 45px;
+  width: 160px;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  border: solid 2px white;
+  background-color: transparent;
+}
+
+.change__skill {
+  background-color: pink;
+  height: 40px;
+  width: 80px;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  border: solid 2px white;
+}
+
+.tools__add{
+  margin: 2px;
+  height: 40px;
+  width:160px;
+  border-radius: 10px;
+}
+
+.btn__change{
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  border: solid 2px white;
+}
+
 /*media query*/
 
 @media all and (max-device-width : 699px) {
@@ -114,10 +151,6 @@ p {
 
   .skills {
     flex-direction: column-reverse;
-  }
-
-  .contents {
-    display: ;
   }
 }
 
