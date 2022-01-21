@@ -18,7 +18,15 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  const array = new Array(26)
+  for (let i = 0; i < array.length; i++){
+    const column = new Array(100)
+    for (let j = 0; j < column.length; j++){
+      column[j] = (`${i+1}-${j+1}`)
+    }
+    array[i] = column
+  }
+  return array
 }
 
 console.log(theaterSieges());
