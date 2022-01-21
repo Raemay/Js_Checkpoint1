@@ -111,16 +111,34 @@ p {
 }
 
 /* Exercice 3 */
-@media screen and (max-width: 700px){
-  .imageDesktop{
+@media screen and (max-width: 700px) {
+  .imageDesktop {
     display: none;
   }
 }
+
 /* Exercice4 */
-.skills{
+.skills {
   display: flex;
   justify-content: center;
 }
-.column{
-  width :80%
+
+.column {
+  width: 80%
+}
+
+/* Exercice5 */
+@media screen and (max-width: 700px) {
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+/* Exercice6 */
+#column1{
+  order: 1;
 }
