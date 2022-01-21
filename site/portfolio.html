@@ -31,24 +31,28 @@
           <img src="image/avatar-bis.png" alt="Avatar" id="avatar" onclick="avatar()">
         </div>
       </div>
-
     </section>
+    
     <!-- You can use the avatar image on the folder image -->
     <section class="introduction">
+      <div class="flex-container">
+        <div class="flex-items">
       <figure class="desktop">
         <img src="image/desktop.svg" alt="desktop" />
       </figure>
+      </div>
+      </div>
     </section>
 
     <!-- Second banner with description of your name and your presentation -->
     <section class="presentation">
-      <div class="description pink-bg" id="color">
+      <div class="description pink-bg">
         <h2>Hi, I’m <span id="name">Matt</span>. Nice to meet you.</h2>
         <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for
           agencies, consulted for startups, and collaborated with talented people to create digital products for both
           business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my
           chops one problem at a time.</p>
-          <buton id="button" class="button" onclick="button()">Modifier Texte et color</buton>
+          <buton id="button" class="button" onclick="button()">Modifier votre nom et ajouter la couleur "#750ff7" </buton>
       </div>
 
       <!-- Bloc of list of skill front end and back end -->
@@ -61,11 +65,20 @@
             <h2 class="pink-text">Languages I speak:</h2>
             <p>MySql</p>
             <h2 class="pink-text">Dev Tools:</h2>
-            <ul>
+            <ul id="projet">
               <li>VScode</li>
             </ul>
           </figure>
+          <!--Creation fonction-->
+          <form onsubmit="soumettre(event)">
+          <input type="text" id="depot_projet" value="" name="depot"
+          placeholder="ajouter">
+          <button class="bouton" type="submit" value="send">Ajouter</button>
+        </form>
         </div>
+
+
+
         <div class="column">
           <figure class="skill">
             <img src="image/frontend.svg" alt="frontend" />
@@ -80,6 +93,7 @@
               <li>You can modify</li>
             </ul>
           </figure>
+          <buton id="modif" class="button" onclick="bonusJMP()">Modifier</buton>
         </div>
       </div>
     </section>

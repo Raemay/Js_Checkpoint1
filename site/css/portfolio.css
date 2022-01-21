@@ -79,7 +79,6 @@ opacity: 0.33;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
   margin-top: 35px;
-
 }
 
 .column:first-child {
@@ -129,8 +128,6 @@ img {
 
 .button {
 	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
-	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
-	background-color:#fc8d83;
 	border-radius:6px;
 	border:1px solid #d83526;
 	display:inline-block;
@@ -143,10 +140,7 @@ img {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
 }
-.button:hover {
-	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
-	background-color:#e4685d;
-}
+
 .button:active {
 	position:relative;
 	top:1px;
