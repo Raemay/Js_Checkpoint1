@@ -4,9 +4,12 @@ function changeAvatar(){
 }
 
 function modifyName(){
+    const newBackGround = document.querySelector("#description")
     const newName =document.querySelector("#name")
+    const changeBackground = prompt("Enter a color:")
     const question = prompt("Enter your Name:")
     newName.innerHTML= question
     newName.style.color= "white"
+    newBackGround.style.background = changeBackground
     
 }
