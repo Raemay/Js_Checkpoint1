@@ -31,6 +31,9 @@
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  /**ajout 2 lignes ci-dessous non demandé**/
+  display: flex;
+  justify-content: center;
 }
 
 .column {
@@ -79,4 +82,77 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/**opacity text**/
+.disabled {
+  opacity: 0.5;
+}
+.heading {
+  text-align: center;
+}
+
+/**screen supérieur à 700px**/
+@media screen and (min-width: 700px) {
+  .navbar {
+    width: calc(100%-60px);
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  /**ajout titre description avatar et desktop dans la même div**/
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /**pourquoi le h1 et le p ne sont pas centrer en ecran - de 700px 
+    comme dans la 1ere vidéo*/
+  }
+
+  .banner__title {
+    margin-bottom: 0;
+  }
+
+  /**inversion des porjets + mettre en ligne**/
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+
+  /**mettre en ligne**/
+  .contents {
+    display: flex;
+    flex-direction: rox;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+/**screen inférieur à 700px**/
+@media screen and (max-width: 700px) {
+
+  /**suppression de l'image desktop*/
+  .desktop {
+    display: none;
+  }
+
+  /**inversion des porjets**/
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .box {
+    width: auto;
+  }
 }
