@@ -142,3 +142,9 @@ p {
 #column1{
   order: 1;
 }
+
+/* Color button modify color and Name */
+.modifyColor-ext{
+  background-color: pink;
+  color: white;
+}
