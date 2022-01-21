@@ -80,3 +80,75 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/*modif du CSS*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mon__titre {
+  font-size: 3em;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.column {
+  width: 40%;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.disabled {
+  opacity: 50%;
+}
+
+.change_text_button {
+  color : white;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-color: white;
+  background-color: rgb(96, 233, 54);
+
+}
+
+
+
+
+@media screen and (max-width : 700px) {
+  .desktop {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  .column {
+    width: 80%;
+  }
+
+  
+}
