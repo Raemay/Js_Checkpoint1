@@ -136,9 +136,31 @@ p {
 }
 
 /* Exercice6 */
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 #column1{
   order: 1;
 }
+
+/* Exercice7 */
+
+.disabled{
+  opacity: 0.5;
+}
+
+/* Exercice8 */
+
+.contents{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
 
 /* Color button modify color and Name */
 .modifyColor-ext{
