@@ -30,22 +30,28 @@ const button = () => {
 /*Fonction modif*/
 const bonusJMP = () => {
     const bonus = document.querySelectorAll("li");
-    for (var i = 0, i = bonus.length; i < l; i++) {
-        bonus[i].style.color = couleur
+    for (var i = 0, l = bonus.length; i < l; i++) {
+        bonus[1].innerHTML="VS Code"
+        bonus[2].innerHTML="GitHub"
+        bonus[3].innerHTML="Terminal"
     }
 }
 
-/*bonus 3*/
+
+
+/*bonus 3* Ne fonctionne pas*/
 const resetform = () => {
-    const titre = document.querySelector("#depot_projet").value=""
+    const titre = document.querySelector("#depot_projet").value = ""
 }
-
-
 const soumettre = (event) => {
     event.preventDefault();
     const titre = document.querySelector("#depot_projet").value
     const creatLi = document.createElement("li")
-    creatLi.classList.add("li")
-    creatLi.innerHTML = `${titre}`
+    const creatContenu = document.createElement("li")
+    creatContenu.innerHTML = `${titre}`
+      console.log(creatContenu)
+      
+    creatLi.appendChild(creatContenu)
+  
     resetform()
 }
