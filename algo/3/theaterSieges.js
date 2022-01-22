@@ -18,8 +18,25 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  let siegesArray = [];
+
+  /* v pour l'index vertical, h pour l'index horizontal */
+  for (let v = 0; v < 26; v++) {
+    for(let h = 0; h < 100; v++) {
+        siegesArray[v] = [];
+    }
+  }
+  for (let v = 0; v < 26; v++) {
+    for(let h = 0; h < 100; h++) {
+       siegesArray[v][h] = `${v+1}-${h+1}`;
+    }
+  }
+  return siegesArray;  
 }
+
+// soit ça me fait planter vsCode soir j'ai une erreur out of memory.... 
+// j'ai réussi à le faire tourner sous un replit  
+// je capitule.....
 
 console.log(theaterSieges());
 
