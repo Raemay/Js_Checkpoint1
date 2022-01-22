@@ -3,6 +3,7 @@ const avatar = () => {
     const image = document.querySelector('#avatar');
     image.src = "image/avatar.svg"
 }
+
 /*Fonction button*/
 const button = () => {
     const nom = prompt("Entrez votre nom:");
@@ -31,27 +32,32 @@ const button = () => {
 const bonusJMP = () => {
     const bonus = document.querySelectorAll("li");
     for (var i = 0, l = bonus.length; i < l; i++) {
-        bonus[1].innerHTML="VS Code"
-        bonus[2].innerHTML="GitHub"
-        bonus[3].innerHTML="Terminal"
+        bonus[1].innerHTML = "VS Code"
+        bonus[2].innerHTML = "GitHub"
+        bonus[3].innerHTML = "Terminal"
     }
 }
 
 
 
-/*bonus 3* Ne fonctionne pas*/
+/*Bonus 3*/
 const resetform = () => {
     const titre = document.querySelector("#depot_projet").value = ""
 }
 const soumettre = (event) => {
     event.preventDefault();
     const titre = document.querySelector("#depot_projet").value
-    const creatLi = document.createElement("li")
-    const creatContenu = document.createElement("li")
-    creatContenu.innerHTML = `${titre}`
-      console.log(creatContenu)
-      
+
+    const creatColumn = document.querySelector("#column1")
+    const creatUl = document.createElement("ul")
+    const creatLi = document.createElement("projet")
+    const creatContenu = document.createElement("projet")
+
+    creatColumn.appendChild(creatUl)
+    creatUl.appendChild(creatLi)
     creatLi.appendChild(creatContenu)
-  
+
+    creatContenu.innerHTML = `${titre}`
+
     resetform()
 }
