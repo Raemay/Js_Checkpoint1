@@ -14,8 +14,21 @@ de points de notre équipe à la fin du championnat
 
 const scores = ['1:0', '2:0', '3:0', '4:4', '2:2', '3:3', '1:4', '2:3', '2:4', '3:3'];
 
-function getPoints(array) {
+function getPoints(array/*score*/) {
   // Your code here !
+  let result = 0
+  for (arr of array) {
+    let newArray = []
+    newArray = arr.split(':')
+    //transforme en tableau chaque index de scores en ['x', 'y'] 
+    if (newArray[0] > newArray[1]) {
+      result += 3
+    }
+    else if (newArray[0] === newArray[1]) {
+      result++
+    }
+  } 
+  return result
 }
 
 module.exports = getPoints;
