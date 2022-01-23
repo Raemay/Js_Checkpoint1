@@ -19,6 +19,15 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
+  let colonnes =[];
+  for(let colonne = 0; colonne < 26 ; colonne ++){
+    let sieges =[];
+    for(let siege = 0; siege < 100; siege ++) {
+      sieges.push((colonne+1).toString()+"-"+(siege+1).toString()) 
+    }
+    colonnes.push(sieges)
+  }
+  return colonnes
 }
 
 console.log(theaterSieges());
