@@ -80,3 +80,50 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+.disabled {
+  opacity: 0.5;
+}
+@media screen and (min-width :700px){
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+}
+.introduction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skills {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+@media screen and (max-width:700px) {
+  .introduction figure {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .introduction {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contents{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+}
