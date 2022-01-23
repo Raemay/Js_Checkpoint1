@@ -10,8 +10,12 @@ sumArr( ["2", "7", "3"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "12"]
 sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "12", "8", "2"]
 */
 
+
 function sumArr(arrayA, arrayB) {
-  // Your code here !
+  // Your code here 
+const arrayC = arrayA.concat(arrayB).join("");
+
+
 }
 
 module.exports = sumArr;

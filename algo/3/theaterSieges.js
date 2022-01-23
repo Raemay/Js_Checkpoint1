@@ -16,11 +16,20 @@ exemple :
   ['26-1', '26-2', '26-3', ..., '26-100']
 ] 
 */
+let i = 0
+let j = 0
 
-function theaterSieges() {
+function theaterSieges(i, j) {
+
   // Your code here !
+
+do {
+  i = i + 1;
+} while (i < 27 && j < 101){
+  j ++
 }
 
-console.log(theaterSieges());
+console.log(theaterSieges.length(26, 100));
 
 module.exports = theaterSieges;
+}

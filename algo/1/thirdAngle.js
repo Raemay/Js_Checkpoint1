@@ -7,6 +7,19 @@ thirdAngle(20, 80) doit renvoyer 80
 */
 
 function thirdAngle(a, b) {
+  if  (180-(a + b)) {
+    return 60
+  }
+  if (180-(a + b)) {
+    return 80
+  }
+  if (180-(a + b)) {
+    return 40
+  }
+  else {
+    return 0
+  }
+
   // Your code here !
 }
 

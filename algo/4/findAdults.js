@@ -24,9 +24,13 @@ const persons = [
   { name: 'Millie Bobby Brown', age: 15, sex: 'female' },
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
+const newArr =[[[]]]
 
 function findAdults(arr) {
   // Your code here !
+  for (let index= 0; index < findAdults.length; index ++){
+    findAdults[index].sex("female").age(18)
+  }
 }
 
 module.exports = findAdults;
