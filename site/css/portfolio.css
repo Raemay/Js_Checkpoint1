@@ -31,6 +31,9 @@
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .column {
@@ -38,7 +41,7 @@
   border-right: 1px solid #e6ecf8;
   border-bottom: 1px solid #e6ecf8;
   background-color: #ffffff;
-  padding: 60px 35px;
+  padding: 60px 90px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
@@ -72,11 +75,46 @@ img {
   max-width: 100%;
 }
 
-.projects a {
+.projects .box a {
   color: #750ff7;
 }
 
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.carte {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: center;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .desktop img {
+    display: none;
+  }
+
+  .skills {
+    flex-direction: column-reverse;
+  }
+
 }
