@@ -19,8 +19,16 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
+  let sieges = [];
+  for (let colonne = 0; colonne < 26; colonne++) {
+    let s = [];
+    for (let siege = 1; siege <= 100; siege++) {
+      s.push((colonne + 1).toString() + "-" + (siege).toString());
+    }
+    sieges.push(s);
+  }
+  return sieges;
 }
-
 console.log(theaterSieges());
 
 module.exports = theaterSieges;

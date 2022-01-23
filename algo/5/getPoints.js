@@ -16,6 +16,16 @@ const scores = ['1:0', '2:0', '3:0', '4:4', '2:2', '3:3', '1:4', '2:3', '2:4', '
 
 function getPoints(array) {
   // Your code here !
+  let final = 0;
+  for (let score of array) {
+    const verifScore = score.split(':');
+    if (+verifScore[0] > +verifScore[1]) {
+      final += 3;
+    } else if (+verifScore[0] === +verifScore[1]) {
+      final++;
+    }
+  }
+  return final;
 }
 
 module.exports = getPoints;
