@@ -18,7 +18,13 @@ exemple :
 */
 
 function theaterSieges() {
+  const array=[]
   // Your code here !
+  for(let i=1;i<27;i++){
+    for(let j=1;j<101;j++){
+
+    }
+  }
 }
 
 console.log(theaterSieges());
