@@ -86,6 +86,12 @@ p {
   padding-right: 15px;
 }
 
+.btn {
+
+  background-color: darksalmon;
+  border-radius: 15px ;
+}
+
  @media (min-width: 700px) {
    .navbar {
     justify-content: space-between;
