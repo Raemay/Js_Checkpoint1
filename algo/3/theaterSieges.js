@@ -19,6 +19,18 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
+  // Matrice 26 x 100;
+  const matrice = [];
+  let numberOfRows = 26;
+  let numberOfColumn = 100;
+  for (let i = 1; i <= numberOfRows; i++) {
+    const row = [];
+    for (let j = 1; j <= numberOfColumn; j++) {
+      row.push(`${i}-${j}`);
+    }
+    matrice.push(row);
+  }
+  return matrice;
 }
 
 console.log(theaterSieges());
