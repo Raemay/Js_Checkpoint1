@@ -24,6 +24,7 @@
 }
 
 .desktop {
+  display: none;
   margin: 80px 0 -5px 0;
 }
 
@@ -60,12 +61,13 @@
 }
 
 .box {
-  width: 25%;
+  width: 80%;
   padding: 30px;
   border: 1px solid #e6ecf8;
   margin: 20px;
   border-radius: 12px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+  text-align: center;
 }
 
 img {
@@ -79,4 +81,59 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Task 2 */
+.introduction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Task 3 4  */
+
+.skills {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+/* Task 6 */
+.disabled {
+  opacity: 0.4;
+}
+
+.heading {
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  /* Task 1 */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .desktop {
+    display: initial;
+  }
+
+  /* Task 5 */
+  .skills {
+    flex-direction: row-reverse;
+  }
+
+  /* Task 7 */
+  .contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 25%;
+  }
 }
