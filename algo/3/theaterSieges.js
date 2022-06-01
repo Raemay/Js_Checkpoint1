@@ -17,9 +17,17 @@ exemple :
 ] 
 */
 
-function theaterSieges() {
-  // Your code here !
-}
+const theaterSieges = () => {
+  let arr = [];
+  for (let i = 1; i <= 26; i++) {
+    let arr2 = [];
+    for (let j = 1; j <= 100; j++) {
+      arr2.push(`${[i]}-${[j]}`);
+    }
+    arr.push(arr2);
+  }
+  return arr
+};
 
 console.log(theaterSieges());
 
