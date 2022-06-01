@@ -7,6 +7,7 @@ thirdAngle(20, 80) doit renvoyer 80
 */
 
 function thirdAngle(a, b) {
+  return 180 - a - b;
   // Your code here !
 }
 
