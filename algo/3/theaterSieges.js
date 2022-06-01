@@ -18,8 +18,18 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  const finalArray= [];
+
+for(let col = 1; col <= 26; col += 1) {
+  const colArray = [];
+  for(let seat = 1; seat <= 100; seat += 1) {
+    colArray.push(${col}-${seat})
+  }
+  finalArray.push(colArray);
 }
+return finalArray;
+}
+
 
 console.log(theaterSieges());
 
