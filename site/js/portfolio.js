@@ -16,8 +16,11 @@ chgBtn.addEventListener('click', function () {
     colorChoice.style.backgroundColor = userColor;
     //* STEP 3 ALL COLORS -- NOT FINISHED
 /*    const userColor = prompt("Enter a color");
-    const colorChoice = document.querySelectorAll[".~=pink");
-    colorChoice.forEach(
-        colorChoice.style.backgroundColor = userColor, colorChoice.style.color = userColor);*/
+    const colorChoiceBck = [];
+    const colorChoiceTxt = [];
+    colorChoiceBck.push(document.querySelectorAll(".pink-bg"));
+    colorChoiceTxt.push(document.querySelectorAll(".pink-text"));
+    colorChoiceBck.forEach(color => style.backgroundColor = userColor);
+    colorChoiceTxt.forEach(color => style.color = userColor);*/
 });
 
