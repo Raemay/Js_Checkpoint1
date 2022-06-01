@@ -31,6 +31,8 @@
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .column {
@@ -79,4 +81,42 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+#desktopimg {
+  display: none;
+}
+
+.projects .disabled {
+  color: #740ff75b;
+}
+
+@media  (min-width: 1150px) {
+  
+  nav {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #desktopimg {
+    display: block;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .contents {
+    display: flex;
+  }
+
 }
