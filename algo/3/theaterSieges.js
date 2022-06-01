@@ -16,10 +16,21 @@ exemple :
   ['26-1', '26-2', '26-3', ..., '26-100']
 ] 
 */
+//matrice 26 par 100
 
 function theaterSieges() {
-  // Your code here !
-}
+
+    let arr1 = []      
+      for ( let i = 1 ; i <= 26 ; i++){     
+        let arr2 = []     
+          for ( let j = 1 ; j <= 100 ; j++){       
+       arr2.push(i + "-" +j)               
+    }    
+        arr1.push(arr2)   
+      }   
+    return arr1;
+  };
+
 
 console.log(theaterSieges());
 
