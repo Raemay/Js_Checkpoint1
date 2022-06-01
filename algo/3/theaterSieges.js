@@ -17,8 +17,16 @@ exemple :
 ] 
 */
 
-function theaterSieges() {
-  // Your code here !
+function theaterSieges(column = 26, seat = 100) {
+  let arr = [];
+  for (let i = 1; i <= column; i++) {
+    let arrTemp = [];
+    for (let j = 1; j <= seat; j++) {
+      arrTemp.push(`${i}-${j}`);
+    }
+    arr.push(arrTemp);
+  }
+  return arr;
 }
 
 console.log(theaterSieges());
