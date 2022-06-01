@@ -33,3 +33,8 @@ a {
 button:focus {
   outline: none;
 }
+.contavat {
+  display: flex; 
+  flex-direction: column;
+ align-items: center;
+}
