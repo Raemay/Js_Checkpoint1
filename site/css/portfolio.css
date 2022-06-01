@@ -86,4 +86,9 @@ p {
   padding-right: 15px;
 }
 
+.btn{
+  background-color: #ffffff;
+  border-radius: 10px 30px;
+  color: darkmagenta;
+}
 
