@@ -3,12 +3,6 @@ const newAvatar = document.querySelector(".avatar");
    newAvatar.onclick = function(){
        newAvatar.src="image/avatar.svg";
    };
-   
-//changement de nom et couleur de nom
-
-
-
-//remplacement du background color avec le bouton
 
 //prompt
 function promptbtn(){
