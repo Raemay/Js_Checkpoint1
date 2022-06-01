@@ -6,25 +6,26 @@ const newAvatar = document.querySelector(".avatar");
    
 //changement de nom et couleur de nom
 
-const newName = document.getElementById("name");
-    newName.textContent = 'Marion';
-    newName.style.color = 'white';
 
-//remplacement du background color et du nom du bouton
+
+//remplacement du background color avec le bouton
+
+//prompt
 function promptbtn(){
     let name = prompt("Please write your name");
+    const newName = document.getElementById("name");
+    newName.textContent = `${name}`;
+    newName.style.color = 'white';  
+//changement de couleur du background
+    const bckgrd = document.querySelector(".pink-bg");
+    bckgrd.style.backgroundColor = " #750ff7";
+//changement de tous les éléments rose
+    const elRose = document.querySelector(".pink-text");
+    elRose.style.color = " #750ff7";
     };
 
 
-const presentation = document.getElementsByClassName("presentation");
 
-function changeColor(){
-    let btnName = document.querySelector('button');
-    btnName.addEventListener(
-        'click',
-        presentation.style.backgroundcolor = 'blue',
-        )
-    }
+    
 
-   // const el = document.querySelector("#outside");
-   // el.addEventListener("click", modifyText, false);
+    
