@@ -18,16 +18,16 @@ exemple :
 */
 
 function theaterSieges() {
-  const finalArray= [];
+  const arr = [];
 
-for(let col = 1; col <= 26; col += 1) {
-  const colArray = [];
-  for(let seat = 1; seat <= 100; seat += 1) {
-    colArray.push(${col}-${seat})
+for(let i = 1; i < 27; i+= 1) {
+  const arr2 = [];
+  for(let j = 1; j < 101; j += 1) {
+    arr2.push(`${i}-${j}`)
   }
-  finalArray.push(colArray);
+  arr.push(arr2);
 }
-return finalArray;
+return arr;
 }
 
 
