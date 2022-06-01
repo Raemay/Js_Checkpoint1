@@ -26,7 +26,15 @@ const persons = [
 ];
 
 function findAdults(arr) {
-  // Your code here !
+  let array = []
+  let female = arr.filter(function(x){
+    return x.age >= 18 && x.sex == "female"; 
+  });
+  let male = arr.filter(function(y){
+    return y.age >= 18 && y.sex == "male";
+  } )
+  array.push(female, male);
+  return array
 }
 
 module.exports = findAdults;
