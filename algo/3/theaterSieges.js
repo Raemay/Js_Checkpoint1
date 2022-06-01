@@ -19,6 +19,15 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
+  const bigArray = [];
+    for (let col = 1; col <= 26; col++) {
+    const colSieges = [];
+    for (let sieges = 1; sieges <= 100; sieges++) {
+      colSieges.push(`${col}-${sieges}`);
+    }
+    bigArray.push(colSieges);
+  }
+  return bigArray;
 }
 
 console.log(theaterSieges());
