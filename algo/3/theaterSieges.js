@@ -18,9 +18,18 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
-}
+  let arr = []
 
-console.log(theaterSieges());
+  for (let i = 1; i < 27; i++) {
+    let newArr = []
+
+    for (let j = 1; j < 101 ; j++) {
+      newArr.push(i + "-" + j)
+
+    }
+    arr.push(newArr)
+  }
+  return arr
+}
 
 module.exports = theaterSieges;
