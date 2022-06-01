@@ -25,6 +25,8 @@
 
 .desktop {
   margin: 80px 0 -5px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .skills {
@@ -79,4 +81,49 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.navbar a{
+  color: #750ff7;
+}
+
+.banner1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects a{
+  opacity: 0.3;
+}
+
+.contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .desktop{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .skills{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  }
+  .contents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+  }
 }
