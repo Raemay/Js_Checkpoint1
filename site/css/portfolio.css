@@ -10,6 +10,39 @@
   color: #750ff7;
 }
 
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+}
+
+.firstBanner  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .introduction img{
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .description {
   color: #ffffff;
   display: flex;
@@ -79,4 +112,29 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.projects .disabled {
+  opacity: 0.75;
+}
+
+@media screen and (min-width: 700px) {
+  .contents  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contents  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
