@@ -31,6 +31,8 @@
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .column {
@@ -79,4 +81,46 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.desktop {
+  content-visibility: hidden;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+@media screen  and (min-width: 700px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .introduction {
+    align-items: center;
+    text-align: center;
+  }
+  .desktop {
+    content-visibility: visible;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+ .projects {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .contents {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ .box {
+   text-align: center;
+ }
+ .heading {
+   text-align: center;
+ }
 }
