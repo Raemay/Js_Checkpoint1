@@ -15,8 +15,10 @@ a {
 
 .navbar {
   display: flex;
+  justify-content: space-between;
   margin: 15px 30px;
 }
+
 
 .logo {
   max-height: 3rem;
@@ -32,4 +34,30 @@ a {
 
 button:focus {
   outline: none;
+  
+}
+.imgdes{
+display: none;
+}
+@media (min-width: 700px) {
+  
+  .descrip{display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+ 
+  .imgdes{width: 200px;
+  display: block;}
+
+  .skills{
+    display: flex;
+    
+  }
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 }
