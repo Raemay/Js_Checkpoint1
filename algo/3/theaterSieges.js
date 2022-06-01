@@ -18,9 +18,20 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
-}
+  let arr1 = []
+  
+  for (let i = 1; i < 27; i++) { 
+    let arr2 = []
+    
+    for (let j = 1; j < 101; j++){ 
+     arr2.push(`${i}-${j}`)
+  }
+    arr1.push(arr2)
 
+}
+return(arr1);
+
+}
 console.log(theaterSieges());
 
 module.exports = theaterSieges;
