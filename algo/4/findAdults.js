@@ -25,19 +25,15 @@ const persons = [
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
 
-function findAdults(age,sex) {
-  
-    let newArr = persons.filter(age,sex)
-      return (newArr.age >= 18) || (newArr.sex == "female")
-    console.log(newArr)
-
-    let newArr2 = persons.filter (age,sex)
-      return (persons.age >= 18) || (persons.sex == "male")
-
-    
-    console.log(findAdults(newArr));
-    console.log(findAdults(newArr2));
-
+/*Matrice 
+2 tableaux dans un tableau, le premier est le tableau femmes*/
+function findAdults(arr) {
+  let matrice = [];
+  let female = arr.filter(person => person.age >= 18 && person.sex === "female");
+  let male =  arr.filter(person => person.age >= 18 && person.sex === "male");
+  matrice.push(female, male);
+  return matrice
   };
+  
 
 module.exports = findAdults;

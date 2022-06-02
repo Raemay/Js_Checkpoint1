@@ -12,6 +12,9 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 
 function sumArr(arrayA, arrayB) {
   // Your code here !
-}
+  let arr1 = arrayA.length > arrayB.length ? arrayA : arrayB
+  let arr2 = arrayA.length > arrayB.length ? arrayB : arrayA
+return arr1.map((el, index)=> (Number(el) + (Number(arr2[index]) || 0)).toString())
+};
 
 module.exports = sumArr;
