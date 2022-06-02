@@ -17,18 +17,21 @@ exemple :
 ] 
 */
 //matrice 26 par 100
+/*2 compteurs car deux tableaux
+les rangees et le nbr de sieges par rangees*/
 
 function theaterSieges() {
 
-    let arr1 = []      
+    let matrice = []      
       for ( let i = 1 ; i <= 26 ; i++){     
-        let arr2 = []     
+        let row = []     
           for ( let j = 1 ; j <= 100 ; j++){       
-       arr2.push(i + "-" +j)               
+       row.push(`${i}-${j}`)               
     }    
-        arr1.push(arr2)   
+        matrice.push(row)   
       }   
-    return arr1;
+    return matrice;
+
   };
 
 
