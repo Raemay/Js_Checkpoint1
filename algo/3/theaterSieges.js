@@ -25,9 +25,11 @@ function theaterSieges() {
     siege.push(i);
   }
   const finalArray = colonnes.map(num =>
-    siege.map(siege => `${num} - ${siege}`)
+    siege.map(siege => `${num}-${siege}`)
   );
   return finalArray;
 }
 
-console.log(theaterSieges());
+// console.log(theaterSieges());
+
+module.exports = theaterSieges;
