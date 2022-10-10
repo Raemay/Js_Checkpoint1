@@ -19,6 +19,7 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
+  return sumOf(theaterSieges().length());
 }
 
 console.log(theaterSieges());

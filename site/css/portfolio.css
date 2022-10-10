@@ -1,6 +1,26 @@
 .pink-bg {
   background-color: pink;
 }
+@media screen and (min-width: 700px) {
+  .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills {
+    margin-top: -30px;
+    border-radius: 12px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
 
 .pink-text {
   color: pink;
@@ -22,11 +42,15 @@
   width: 60%;
   text-align: center;
 }
-
-.desktop {
-  margin: 80px 0 -5px 0;
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+    margin: 80px 0 -5px 0;
+  }
+  img {
+    max-width: 100%;
+  }
 }
-
 .skills {
   margin-top: -30px;
   border-radius: 12px;
@@ -66,10 +90,6 @@
   margin: 20px;
   border-radius: 12px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
-}
-
-img {
-  max-width: 100%;
 }
 
 .projects a {
