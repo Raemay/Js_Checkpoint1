@@ -10,6 +10,38 @@
   color: #750ff7;
 }
 
+.menu {
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+.avatar {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+}
+.skills {
+  display: flex;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
 .description {
   color: #ffffff;
   display: flex;
@@ -79,4 +111,24 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 700px) {
+  body {
+    display: flex;
+  }
+  .container {
+    display: flex;
+    text-align: center;
+  }
+  .avatar {
+    text-align: center;
+    justify-content: center;
+  }
+}
+.skills {
+  display: grid;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
 }

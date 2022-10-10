@@ -18,9 +18,16 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+const resultlGlobal: [];
+
+for (let i = 26; i < 100; i++)
+for (let i =100; i)
+
+
 }
+
 
 console.log(theaterSieges());
 
 module.exports = theaterSieges;
+
