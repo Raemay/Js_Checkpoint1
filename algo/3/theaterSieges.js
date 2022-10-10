@@ -18,7 +18,18 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  const seats = [];
+  for (let c = 1; c < 26; c++) {
+    const columns = [];
+    for (let s = 1; s < 100; s++) {
+      columns.push[(c,s)];
+    }
+  seats.push(...columns);
+  return seats;
+  }
+
+  console.log(seats);
+
 }
 
 console.log(theaterSieges());

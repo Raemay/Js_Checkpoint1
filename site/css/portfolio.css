@@ -80,3 +80,39 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disabled {
+  opacity: 50%;
+}
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .contents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
