@@ -85,6 +85,10 @@ img {
   color: #750ff7;
 }
 
+.projects .disabled {
+  color: #dbc6f6;
+}
+
 p {
   padding-left: 15px;
   padding-right: 15px;
