@@ -18,7 +18,16 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  const resultGlobal = [];
+
+  for (let i = 1; i <= 26; i++) {
+    const resultColumn = [];
+    for (let j = 1; j <= 100; j++) {
+      resultColumn.push(`${[i]}-${[j]}`);
+    }
+    resultGlobal.push(resultColumn);
+  }
+  return resultGlobal;
 }
 
 console.log(theaterSieges());
