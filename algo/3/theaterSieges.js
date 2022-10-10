@@ -18,8 +18,26 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  //Your code here!
+
+  const siegesTot = [];
+  for (let i = 1; i <= 26; i++) {
+    const siegesCol = [];
+
+    for (let j = 1; j <= 100; j++) {
+      let value = `${i}-${j}`
+      siegesCol.push(value);
+    }
+
+    siegesTot[i - 1] = siegesCol;
+    siegesTot.push(siegesTot[i - 1]);
+  }
+  siegesTot.pop();
+  return siegesTot;
+
 }
+
+
 
 console.log(theaterSieges());
 
