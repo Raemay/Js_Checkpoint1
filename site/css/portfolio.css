@@ -80,3 +80,54 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+a.disabled {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profil {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .contents {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .box {
+    display: grid;
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .profil {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
