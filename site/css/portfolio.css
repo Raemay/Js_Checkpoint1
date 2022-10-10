@@ -111,6 +111,12 @@ p {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
   }
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 800px) {
