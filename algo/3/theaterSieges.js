@@ -17,10 +17,13 @@ exemple :
 ] 
 */
 
+let colonnes = 26;
+let numberSieges = 100;
+
 function theaterSieges() {
-  // Your code here !
+  for (let i = 0; i < theaterSieges().length; i++) {}
 }
 
-console.log(theaterSieges());
+console.log(theaterSieges(26, 100));
 
 module.exports = theaterSieges;
