@@ -1,3 +1,31 @@
+@media (min-width: 700px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .first-banner-container {
+    display: flex;
+    justify-content: center;
+  }
+  .first-banner {
+    text-align: center;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .introduction {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .pink-bg {
   background-color: pink;
 }
