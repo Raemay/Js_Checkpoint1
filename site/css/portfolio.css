@@ -1,3 +1,7 @@
+.container {
+  width: 100%;
+}
+
 .pink-bg {
   background-color: pink;
 }
@@ -27,6 +31,10 @@
   margin: 80px 0 -5px 0;
 }
 
+.img-desktop {
+  margin: 10px;
+}
+
 .skills {
   margin-top: -30px;
   border-radius: 12px;
@@ -34,6 +42,7 @@
 }
 
 .column {
+  width: 50%;
   border-left: 1px solid #e6ecf8;
   border-right: 1px solid #e6ecf8;
   border-bottom: 1px solid #e6ecf8;
@@ -76,7 +85,81 @@ img {
   color: #750ff7;
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.introduction {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-desktop {
+    display: none;
+  }
+
+  .column {
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+  }
+
+  .skills {
+    padding: 0;
+  }
+
+  .skill {
+    margin: 0;
+  }
+
+  .contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
 }
