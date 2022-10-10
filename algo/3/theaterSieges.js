@@ -17,8 +17,20 @@ exemple :
 ] 
 */
 
+const numberColumns = 26;
+const numberSeats = 100;
+
 function theaterSieges() {
-  // Your code here !
+  const finalResult = [];
+  for (let i = 1; i < numberColumns + 1; i++) {
+    const lineResult = [];
+    for (let j = 1; j < numberSeats + 1; j++) {
+      lineResult.push(`${i}-${j}`);
+    }
+    finalResult.push(lineResult);
+  }
+  console.log(finalResult.length);
+  return finalResult;
 }
 
 console.log(theaterSieges());
