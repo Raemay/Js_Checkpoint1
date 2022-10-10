@@ -40,6 +40,7 @@
   background-color: #ffffff;
   padding: 60px 35px;
   border-radius: 12px;
+  width: 100%;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
 }
@@ -60,7 +61,7 @@
 }
 
 .box {
-  width: 25%;
+  width: 50%;
   padding: 30px;
   border: 1px solid #e6ecf8;
   margin: 20px;
@@ -79,4 +80,63 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+/* modif css */
+
+/*ecran > 700pc */
+
+@media screen and (min-width: 700px) {
+  .navbar,
+  .menu {
+    justify-content: space-between;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/*ecran < 700pc */
+
+@media screen and (max-width: 700px) {
+  .navbar,
+  .menu {
+    justify-content: space-between;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .introduction {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

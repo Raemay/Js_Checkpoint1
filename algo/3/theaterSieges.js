@@ -17,9 +17,7 @@ exemple :
 ] 
 */
 
-function theaterSieges() {
-  // Your code here !
-}
+function theaterSieges() {}
 
 console.log(theaterSieges());
 
