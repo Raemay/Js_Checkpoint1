@@ -18,7 +18,16 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
+  let result = [];
+
+  for (let j = 1; j < 27; j++) {
+    let column = [];
+    for (let i = 1; i < 101; i++) {
+      column.push(j + "-" + i);
+    }
+    result.push(column);
+  }
+  return result;
 }
 
 console.log(theaterSieges());
